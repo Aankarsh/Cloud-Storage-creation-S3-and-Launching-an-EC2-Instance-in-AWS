@@ -1,96 +1,69 @@
-[# Cloud-Storage-creation-S3-and-Launching-an-EC2-Instance-in-AWS
-## Ex.2 Cloud storage creation (S3) and launching an (Ec2) instance in AWS
+# EX- 2 CLOUD-STORAGE-CREATION-S3-AND-LAUNCHING-AN-EC2-INSTANCE-IN-AWS-
 
-```
-Name         : AANKARSH J
-Register No. : 212223233001
-```
- ## Aim:
+  ## AIM
+       To Create S3 bucket and EC2 Instances for Linux and Windows.
+## PROBLEM STATEMENT
+   This experiment demonstrates the process of setting up cloud infrastructure on AWS by creating an S3 bucket for storage and EC2 instances to host Linux and Windows environments. The goal is to provide an overview of how to configure and interact with these resources effectively, along with commands and screenshots to document the process.
+
+## ALGORITHM
+ ### Step 1: Log in
  
-To create a Simple Storage Service (S3) in AWS and to launch an EC2 instance in AWS. 
+ Log in to AWS Console
+ 
+ ### Step 2: Create an S3 Bucket
+ 
+Navigate to the S3 service.
+Click on Create bucket.
+Enter a Bucket name and select a Region.
+Configure Bucket settings as required (e.g., versioning, public access).
+Click on Create bucket to finalize.
 
-## Procedure:
+ ### Step 3: Create an EC2 Instance (Linux)
+ 
+Go to the EC2 service.
+Click on Launch Instance.
+Select an Amazon Machine Image (AMI) for Linux (e.g., Amazon Linux 2).
+Choose an Instance Type (e.g., t2.micro for free tier).
+Configure Instance Details, Storage, and Security Group.
+Review and click Launch with a key pair (or create one if needed).
 
-a)	Steps to Create a first S3 Bucket:
+ ### Step 4: Create an EC2 Instance (Windows)
+ 
+Return to the EC2 service and click Launch Instance.
+Select a Windows AMI (e.g., Windows Server 2019).
+Choose the Instance Type.
+Configure Instance Details, Storage, and Security Group.
+Review and launch with a key pair (for future login).
 
-Step 1: Sign in to the AWS Management Console
+ ### Step 5: Verify and Connect to Instances
+ 
+Verify the status of both instances in the EC2 dashboard.
+Connect to the Linux instance using SSH.
+Connect to the Windows instance using RDP.
 
-  Go to https://console.aws.amazon.com/s3.
+## COMMANDS
+
+## OUTPUT
+### REG NUMBER: 212223233001
+### NAME: AANKARSH
+
+S3 BUCKET:
+
+![image](https://github.com/user-attachments/assets/7284eaff-634b-4b9d-a8a9-bd6ece0e9ea9)
+
+![image](https://github.com/user-attachments/assets/8c0958a9-55ac-4e1b-88da-981d0f934b68)
+
+
+EC2 INSTANCE:
+
+![image](https://github.com/user-attachments/assets/3f752d29-e74d-4728-87eb-b533355a913f)
+
+![image](https://github.com/user-attachments/assets/853b5bb4-fd6f-4380-8743-3b3ab8f36270)
+
+
+## RESULT
+ 
+Successfully created an S3 bucket and EC2 instances for both Linux and Windows, demonstrating cloud resource management on AWS.
   
-Step 2: Open the S3 Service
-
-  In the console, type S3 in the search bar and select S3 to open the service dashboard.
-  
-Step 3: Create Bucket
-
-  Click the Create bucket button.
-Step 4: Configure Bucket Settings
-
-•	Bucket name: Choose a globally unique name.
-•	AWS Region: Select the region where you want to store your data.
-
-Step 5: Object Ownership
-
-Choose between:
-
-	ACLs disabled (recommended) – Bucket owner has full control.
-	ACLs enabled – Control access via access control lists.
-
-Step 6: Block Public Access Settings
-By default, all public access is blocked. Leave it as-is unless you need public access.
-
-Step 7: Bucket Versioning (optional)
-Choose whether to enable versioning for objects in the bucket.
-
-Step 8: Encryption (optional)
-Select encryption options (SSE-S3, SSE-KMS, or none).
-
-Step 9: Advanced Settings (optional)
-Add tags, configure logging, etc.
-
-Step 10: Create the Bucket
-Click Create bucket at the bottom of the page.
-
-b)	i. Steps to launch an EC2 Instance
-
-1.	Go to the EC2 Dashboard in AWS Console.
-2.	Click on “Launch Instance”.
-3.	Choose an Amazon Machine Image (AMI) (e.g., Amazon Linux).
-4.	Select an instance type (e.g., t2.micro for Free Tier).
-
-5.	Create or choose a key pair for SSH access.
-6.	Configure network settings (use default VPC/subnet).
-7.	Configure storage (default root volume is fine).
-8.	Review the settings and click “Launch Instance”.
-9.	Wait for the instance to enter the running state.
-
-c)	Step 3: Connect to Your Instance
-
-•	Linux: Use SSH command with your .pem key.
-•	Windows: Use RDP with decrypted admin password.
-
-d)	Steps to Clean Up (Terminate the Instance)
-1.	Go to EC2 Instances.
-2.	Select your instance → Instance State → Terminate.
 
 
-## Snap Shots:
- 
-
-Snap Shot 1: 
-
-<img width="1004" height="539" alt="image" src="https://github.com/user-attachments/assets/7bcbc34a-925f-45be-b177-e82e38f39bbc" />
-
-Simple Storage Service (S3)
- 
-
-Snap Shot 2: 
-
-<img width="981" height="583" alt="image" src="https://github.com/user-attachments/assets/3f6f7b88-7425-4179-a1e3-bc1a85fb1372" />
-
-EC2 (Elastic Compute Cloud) – Instance
-
-## Result:
-Thus, a Simple Storage Service (S3) and EC2 (Elastic Compute Cloud) - instance has been successfully created and launched in AWS
- 
-](https://github.com/Aankarsh/AWS-Account-Creation/blob/main/README.md)https://github.com/Aankarsh/AWS-Account-Creation/blob/main/README.mdhttps://github.com/Aankarsh/AWS-Account-Creation/blob/main/README.md
